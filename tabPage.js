@@ -6,7 +6,18 @@ getName()
 
 document.getElementById("settings_button").addEventListener("click", goToSettings);
 
-let myPopover = document.getElementById('myPopover')
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, {edge: 'right'});
+});
+// Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+// var collapsibleElem = document.querySelector('.collapsible');
+// var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+// var instance = M.Tabs.init(tabs_el);
+var tab_elem = document.querySelector('.tabs');
+var options = {}
+var tabs_instance = M.Tabs.init(elem, options);
 
 function getTime() {
     var time = new Date()
