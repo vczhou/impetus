@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<title>Impetus: New Tab</title>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="popper.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+  }
+
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    position: relative;
+    /*opacity: 0.65;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .bgimg-1 {
+    background-image: url("../images/bkgd/flowers.jpg");
+    height: 100%;
+  }
+
+  .caption {
+    position: absolute;
+    left: 0;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+  .caption span.welcome {
+    /*background-color: #111;*/
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    /*letter-spacing: 5px;*/
+    font-weight:bold
+  }
+</style>
+</head>
+<body>
+  <div class="bgimg-1">
+    <div class="col-xs-4 caption">
+      <span class="welcome">What's your name?</span><br>
+      <input id="welcome" class="welcome form-control form-control-lg" type="text" placeholder="What's your name?">
+    </div>
+  </div>
+</body>
+<script src="welcomePage.js"></script>
+</html>

@@ -1,7 +1,13 @@
-console.log("HELLO")
+console.log("Your name is: " + localStorage.getItem("name"))
 
 let myPopover = document.getElementById('myPopover')
 
-myPopover.onclick = function(element) {
-	element.popover('show')
-};
+if (myPopover !== null) {
+	myPopover.onclick = function(element) {
+		element.popover('show')
+	};
+}
+
+
+
+

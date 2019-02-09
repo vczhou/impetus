@@ -11,7 +11,7 @@
 	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
 
 	"chrome_url_overrides" : {
-    "newtab": "tabPage.html"
+    "newtab": "welcomePage.html"
   },
   "browser_action": {
     "default_icon": {
