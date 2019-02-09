@@ -93,7 +93,7 @@
 <body> 
   <div class="bgimg-1">
     <div class="caption">
-      <span id="clock" class="time"> 9:30  </span><br>
+      <span id="clock" class="time">9:30</span><br>
       <span class="hello">
         <span id="mantra">Hello</span>
         <span id="name">Eric.</span>
@@ -101,35 +101,36 @@
       <span class="medium">I can do all things through him who strengthens me.</span><br>
       <span class="medium">Philippians 4:13 (ESV)</span>
       <br><br>
-      <span class="small">How do you want to experience God today?</span>
-      <br>
-      <span class="small">_____________________________________</span>
       <br>
     </div>
     <div class="settings">
       <button id="settings_button" type="button" class="btn-secondary"> Settings </button>
     </div>
-
-  <div class="utilities">
-    <ul id="slide-out" class="sidenav">
-      <li> <div class="user-view"> Utilities </div></li>
-      <li> <div class="row">
-        <div class="col s12">
-          <ul class="tabs">
-            <li class="tab col s3"><a href="#todo">Todo</a></li>
-            <li class="tab col s3"><a href="#prayer">Prayer</a></li>
-            <li class="tab col s3"><a href="#devo">Devo</a></li>
-          </ul>
+    <div class="utilities">
+      <ul id="slide-out" class="sidenav">
+        <div class="row">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s4"><a href="#todo">
+                <i class="material-icons md-36">done</i>
+              </a></li>
+              <li class="tab col s4"><a class="prayer" href="#prayer">
+                <i class="material-icons md-36">forum</i>
+              </a></li>
+              <li class="tab col s4"><a href="#devo">
+                <i class="material-icons md-36">chrome_reader_mode</i>
+              </a></li>
+            </ul>
+          </div>
+          <div id="todo" class="col s12">To do</div>
+          <div id="prayer" class="col s12">Prayer</div>
+          <div id="devo" class="col s12">Devo</div>
         </div>
-        <div id="todo" class="col s12"> Todo List</div>
-        <div id="prayer" class="col s12">Prayer Requests</div>
-        <div id="devo" class="col s12"> Devotional</div>
-      </div> </li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </ul>
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
   </div>
-  </div>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-</body>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  </body>
 <script type="text/javascript" src="js/tabPage.js"></script>
 </html>
