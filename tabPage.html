@@ -6,6 +6,13 @@
   <script src="jquery-3.3.1.min.js"></script>
   <script src="popper.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
   body, html {
     height: 100%;
@@ -70,6 +77,12 @@
     bottom: 3%;
     left: 1%;
   }
+  
+  .utilities {
+    position: absolute;
+    right: 1%;
+    top: 2%;
+  }
 
   h3 {
     letter-spacing: 5px;
@@ -94,20 +107,32 @@
       <br>
       <span class="small">_____________________________________</span>
       <br>
-      <button id="myPopover" type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-        Pray
-      </button>
-            <button id="myPopover" type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-        Devo
-      </button>
-      <button id="myPopover" type="button" class="btn btn-secondary" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-        Todo
-      </button>
     </div>
     <div class="settings">
       <button id="settings_button" type="button" class="btn-secondary"> Settings </button>
     </div>
+
+  <div class="utilities">
+    <ul id="slide-out" class="sidenav">
+      <li> <div class="user-view"> Utilities </div></li>
+      <li> <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#todo">Todo</a></li>
+            <li class="tab col s3"><a href="#prayer">Prayer</a></li>
+            <li class="tab col s3"><a href="#devo">Devo</a></li>
+          </ul>
+        </div>
+        <div id="todo" class="col s12"> Todo List</div>
+        <div id="prayer" class="col s12">Prayer Requests</div>
+        <div id="devo" class="col s12"> Devotional</div>
+      </div> </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  </div>
+        
   </div>
 </body>
 <script type="text/javascript" src="tabPage.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
 </html>
