@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // var instance = M.Tabs.init(tabs_el);
 var tab_elem = document.querySelector('.tabs');
 var options = {}
-var tabs_instance = M.Tabs.init(elem, options);
+var tabs_instance = M.Tabs.init(tab_elem, options);
 
 function getTime() {
     var time = new Date()
