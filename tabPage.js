@@ -1,10 +1,10 @@
 console.log("HELLO")
 getTime()
+getMantra()
 
 let myPopover = document.getElementById('myPopover')
 
 function getTime() {
-    console.log("inside time");
     var time = new Date();
     var hours = time.getHours();
     var minutes = time.getMinutes();
@@ -14,4 +14,18 @@ function getTime() {
     var strTime = hours + ":" + minutes;
     var t = setTimeout(getTime, 500);
     document.getElementById('clock').innerText = strTime;
+}
+
+function getMantra() {
+    var date = new Date();
+    var hours = date.getHours();
+    var mantra = "";
+    if (hours < 12) {
+        mantra = "Good Morning";
+    } else if (hours < 17) {
+        mantra = "Good Afternoon";
+    } else {
+        mantra = "Good Evening";
+    }
+    document.getElementById('mantra').innerHTML = mantra + ", ";
 }
