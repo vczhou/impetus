@@ -1,6 +1,6 @@
 openDashboard()
 
-document.getElementById("welcome").addEventListener("keydown", function(e) {
+document.getElementById("name").addEventListener("keydown", function(e) {
     if (!e) { var e = window.event; }
     // e.preventDefault(); // sometimes useful
 
@@ -9,13 +9,14 @@ document.getElementById("welcome").addEventListener("keydown", function(e) {
 }, false);
 
 function openDashboard() {
+	console.log("Inside openDashboard")
 	if (localStorage.getItem("name") != null) {
 		window.open("tabPage.html",'_self') 
 	}
 }
 
 function setGreeting() {
-	var name = document.getElementById("welcome").value
+	var name = document.getElementById("name").value
 	console.log("Hello " + name)
 	localStorage.setItem("name", name)
 
