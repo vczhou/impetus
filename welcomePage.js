@@ -10,7 +10,7 @@ document.getElementById("welcome").addEventListener("keydown", function(e) {
 
 function openDashboard() {
 	if (localStorage.getItem("name") != null) {
-		window.open("tabPage.html") 
+		window.open("tabPage.html",'_self') 
 	}
 }
 
