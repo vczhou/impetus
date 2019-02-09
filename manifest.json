@@ -15,17 +15,17 @@
   },
   "browser_action": {
     "default_icon": {
-      "16": "images/impetus.png",
-      "32": "images/impetus.png",
-      "48": "images/impetus.png",
-      "128": "images/impetus.png"
+      "16": "images/logo/impetus.png",
+      "32": "images/logo/impetus.png",
+      "48": "images/logo/impetus.png",
+      "128": "images/logo/impetus.png"
     }
   },
   "icons": {
-    "16": "images/impetus.png",
-    "32": "images/impetus.png",
-    "48": "images/impetus.png",
-    "128": "images/impetus.png"
+    "16": "images/logo/impetus.png",
+    "32": "images/logo/impetus.png",
+    "48": "images/logo/impetus.png",
+    "128": "images/logo/impetus.png"
   },
 	"manifest_version": 2
 }

@@ -3,7 +3,7 @@ body, html {
 }
 .bg { 
     /* The image used */
-    background-image: url("../images/flowers.jpg");
+    background-image: url("../images/bkgd/flowers.jpg");
 
     /* Full height */
     height: 100%; 
