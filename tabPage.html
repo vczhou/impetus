@@ -82,6 +82,10 @@
     top: 2%;
   }
 
+  .sidenav {
+    opacity: 0.88;
+  }
+
   h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -123,9 +127,47 @@
               </a></li>
             </ul>
           </div>
-          <div id="todo" class="col s12">To do</div>
-          <div id="prayer" class="col s12">Prayer</div>
-          <div id="devo" class="col s12">Devo</div>
+          <div id="todo" class="col s12">
+            <h3>To do</h3>
+            <form id="todo_list" action="#">
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" />
+                  <span>Filled in</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>
+                    <input id="todo_item" type="text" placeholder="New Task">
+                  </span>
+                </label>
+              </p>
+            </form>
+          </div>
+          <div id="prayer" class="col s12">
+            <h3>Prayer</h3>
+              <form id="prayer_list" action="#">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" />
+                    <span>Filled in</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" checked="checked" />
+                    <span>
+                      <input id="prayer_item" type="text" placeholder="New Task">
+                    </span>
+                  </label>
+                </p>
+              </form>
+          </div>
+          <div id="devo" class="col s12">
+            <h3>Devo</h3>
+          </div>
         </div>
       </ul>
       <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>

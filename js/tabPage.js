@@ -4,6 +4,21 @@ getTime()
 getMantra()
 getName()
 
+document.getElementById("todo_item").addEventListener("keydown", function(e) {
+    if (!e) { var e = window.event; }
+
+    // Enter is pressed
+    if (e.keyCode == 13) { addListItem("todo_list", "todo_item"); }
+}, false);
+
+document.getElementById("prayer_item").addEventListener("keydown", function(e) {
+    if (!e) { var e = window.event; }
+
+    // Enter is pressed
+    if (e.keyCode == 13) { addListItem("prayer_list", "prayer_item"); }
+}, false);
+
+
 document.getElementById("settings_button").addEventListener("click", goToSettings);
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -52,4 +67,22 @@ function getName() {
 
 function goToSettings() {
 		window.open("settings.html",'_self') 
+}
+
+function addListItem(listID, itemID) {
+    var list = document.getElementById(listID)
+    var listItem = document.getElementById(itemID).value
+    console.log("Attempting to add ")
+
+                // <p>
+                //   <label>
+                //     <input type="checkbox" class="filled-in" checked="checked" />
+                //     <span>Task</span>
+                //   </label>
+                // </p>
+    var newItem = document.createElement("P");
+    var itemText = document.createElement("span");
+    newItem.appendChild(itemText)
+
+    list.appendChild(newItem);
 }
