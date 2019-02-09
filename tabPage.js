@@ -4,6 +4,8 @@ getTime()
 getMantra()
 getName()
 
+document.getElementById("settings_button").addEventListener("click", goToSettings);
+
 let myPopover = document.getElementById('myPopover')
 
 function getTime() {
@@ -35,4 +37,8 @@ function getMantra() {
 function getName() {
 	var name = localStorage.getItem("name")
 	document.getElementById('name').innerHTML = name + "."
+}
+
+function goToSettings() {
+		window.open("settings.html",'_self') 
 }
