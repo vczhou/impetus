@@ -3,6 +3,7 @@ console.log("Your name is: " + localStorage.getItem("name"))
 getTime()
 getMantra()
 getName()
+getImage()
 
 document.getElementById("todo_item").addEventListener("keydown", function(e) {
     if (!e) { var e = window.event; }
@@ -113,5 +114,16 @@ function getVerse(verse_map) {
     document.getElementById('verse_loc').innerHTML = loc
     var verse = Object.values(verse_map)[rand]
     document.getElementById('verse').innerHTML = verse
+}
+
+function getImage() {
+    var today = new Date();
+    var day = Math.floor(today / (24*60*60*1000));
+    console.log(day);
+    var num_pictures = 8;
+    var pic = day % num_pictures;
+    console.log(pic);
+    var photo_url = "../images/bkgd/000" + pic + ".jpg"
+    document.getElementById('bkgd').style.backgroundImage = 'url(' + photo_url + ')' 
 }
 
