@@ -92,17 +92,26 @@ function addListItem(listID, itemID) {
     var listItem = document.getElementById(itemID).value
     console.log("Attempting to add ")
 
-                // <p>
-                //   <label>
-                //     <input type="checkbox" class="filled-in" checked="checked" />
-                //     <span>Task</span>
-                //   </label>
-                // </p>
-    var newItem = document.createElement("P");
-    var itemText = document.createElement("span");
-    newItem.appendChild(itemText)
+    // <p>
+    //   <label>
+    //     <input type="checkbox" class="filled-in" checked="checked" />
+    //     <span>Task</span>
+    //   </label>
+    // </p>
+    var newItem = document.createElement("P")
+    var label = document.createElement("label")
+    var itemText = document.createElement("span")
+    var checkbox = document.createElement("input")
+    checkbox.type = "checkbox"
+    itemText.innerText = listItem
+    label.appendChild(checkbox)
+    label.appendChild(itemText)
+    newItem.appendChild(label)
 
-    list.appendChild(newItem);
+    console.log(newItem)
+    list.insertBefore(newItem, list.children[list.children.length-1]);
+    document.getElementById(itemID).value = ""
+    // list.appendChild(newItem)
 }
 
 function getVerse(verse_map) {
