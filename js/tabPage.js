@@ -20,6 +20,7 @@ document.getElementById("prayer_item").addEventListener("keydown", function(e) {
 }, false);
 
 
+// document.getElementById("delete_button").addEventListener("click", deleteListItem);
 document.getElementById("settings_button").addEventListener("click", goToSettings);
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -103,17 +104,23 @@ function addListItem(listID, itemID) {
     var label = document.createElement("label")
     var itemText = document.createElement("span")
     var checkbox = document.createElement("input")
+    // var deleteButton = document.createElement("button")
     checkbox.type = "checkbox"
+    // button.innerText = "delete"
     itemText.innerText = listItem
     label.appendChild(checkbox)
     label.appendChild(itemText)
+    // label.appendChild(deleteButton)
     newItem.appendChild(label)
 
     console.log(newItem)
     list.insertBefore(newItem, list.children[list.children.length-1]);
     document.getElementById(itemID).value = ""
-    // list.appendChild(newItem)
 }
+
+// function deleteListItem() {
+//     var list = document.getElementById(listID)
+// }
 
 function getVerse(verse_map) {
     var len = Object.keys(verse_map).length
