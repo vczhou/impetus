@@ -9,3 +9,4 @@ function changeName() {
 	var name = document.getElementById("name_field").value
 	localStorage.setItem("name", name)
 }
+

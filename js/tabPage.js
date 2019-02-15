@@ -37,16 +37,16 @@ var options = {}
 var tabs_instance = M.Tabs.init(tab_elem, options);
 
 var verse_map = {
-    "Phillipians 4:13":  "I can do all things through him who strengthens me",
-    "Joshua 1:9": "Be strong and courageous. Do not be frightned, and do not be disamye, for the LORD your God is with you wherever you go.",
+    "Phillipians 4:13":  "I can do all things through him who strengthens me.",
+    "Joshua 1:9": "Be strong and courageous. Do not be frightened, and do not be dismay, for the LORD your God is with you wherever you go.",
     "Lamentations 3:22-23": "The steadfast love of the LORD never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
     "Proverbs 18:10": "The name of the LORD is a strong tower; the righteous man runs into it and is safe.",
     "Psalm 16:8": "I have set the LORD always before me; because he is at my right hand, I shall not be shaken.",
     "Psalm 23:4": "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me.",
-    "Psalm 55:22": "Cast your burden on the LORD, and he will sustain you; he will never permit the rightous to be moved.",
-    "Psalm 62:6": "He only is more rock and my salvation, my fortress; I shall not be shaken.",
+    "Psalm 55:22": "Cast your burden on the LORD, and he will sustain you; he will never permit the righteous to be moved.",
+    "Psalm 62:6": "He alone is my rock and my salvation, my fortress; I shall not be shaken.",
     "Psalm 120:1": "In my distress I called to the LORD, and he answered me.",
-    "Isaiah 26:3": "You keep him in perfect peace whose mind is stayed on you, becasue he trusts in you.",
+    "Isaiah 26:3": "You keep him in perfect peace whose mind is stayed on you, because he trusts in you.",
     "Mark 10:27": "Jesus looked at them and said, \"With man it is impossible, but not with God. For all things are possible with God.\"",
     "1 Thessalonians 5:11": "Therefore encourage one another and build one another up, just as you are doing.",
     "Phillipians 4:9": "And my God will supply every need of yours according to his riches in glory in Christ Jesus.",
@@ -134,11 +134,11 @@ function getVerse(verse_map) {
 
 function getImage() {
     var today = new Date();
-    var day = Math.floor(today / (24*60*60*1000));
-    console.log(day);
+    // var day = Math.floor(today / (24*60*60*1000));
+    var day = today.getDate();
+    // TODO: figure out how to not hard code this
     var num_pictures = 8;
     var pic = day % num_pictures;
-    console.log(pic);
     var photo_url = "../images/bkgd/000" + pic + ".jpg"
     document.getElementById('bkgd').style.backgroundImage = 'url(' + photo_url + ')' 
 }
